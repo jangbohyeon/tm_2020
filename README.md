@@ -1,6 +1,6 @@
 # Textmining Project(Team Project)
-## SoonChunHyang University, Department of BigData Engineering
-## member : Jang Bo Hyeon, Lee Ga Hyun
+>SoonChunHyang University, Department of BigData Engineering
+>member : Jang Bo Hyeon, Lee Ga Hyun
 
 --------------------
 ## Project explanation
