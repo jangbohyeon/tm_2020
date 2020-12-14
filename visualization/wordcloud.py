@@ -14,6 +14,8 @@ from PIL import Image
 
 mask = np.array(Image.open('image.jpg'))
 
-wc = WordCloud(mask=mask, max_font_size=100,\ max_words=40, background_color="white",\ font_path='../data_files/NanumBarunGothic.ttf')
+wc = WordCloud(mask=mask, max_font_size=100,\
+ max_words=40, background_color="white",\
+ font_path='../data_files/NanumBarunGothic.ttf')
 plt.imshow(wc.generate_from_frequencies(word_dict), interpolation="bilinear")
 plt.axis("off")
