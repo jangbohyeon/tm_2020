@@ -23,14 +23,14 @@ for i in range(N):
         tf_result[-1].append(tf(token,doc))
 
     
-dtm_20200801 = pd.DataFrame(tf_result,columns = VOCA_20200801)
+dtm_20200801 = pd.DataFrame(tf_result, columns=VOCA_20200801)
 
 idf_result = []
 for j in range(len(VOCA_20200801)):
     token = VOCA_20200801[j]
     idf_result.append(idf(token))
     
-idf_ = pd.DataFrame(idf_result,index = VOCA_20200801, columns = ['IDF'])
+idf_ = pd.DataFrame(idf_result, index=VOCA_20200801, columns=['IDF'])
 
 
 from sklearn.feature_extraction.text import TfidfVectorizer
