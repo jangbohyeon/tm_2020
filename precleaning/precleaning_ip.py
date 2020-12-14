@@ -4,6 +4,7 @@ import sys
 
 cfile_20200801 = pd.read_excel('../data_files/Crawling_20200801-20200801.xlsx')
 cfile_20200801 = pd.DataFrame(cfile_20200801)
+cnews_20200801 = cfile_20200801
 cnews_20200801.columns = ['num', '내용']
 cnews_20200801 = cnews_20200801.dropna(subset=['내용'])
 cnews_20200801 = cnews_20200801.reset_index()
