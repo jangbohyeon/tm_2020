@@ -20,7 +20,8 @@ news_20200801 = news_20200801.dropna(subset=['제목'])
 news_20200801 = news_20200801.reset_index()
 
 for i in range(0,len(news_20200801)):
-    news_20200801['제목'][i] = news_20200801['제목'][i].replace(',','').replace('\n','').replace('.','').replace('"','').replace('!','').replace('(',' ').replace(')','').replace('?','').casefold()
+    news_20200801['제목'][i] = news_20200801['제목'][i].replace(',','').replace('\n','').replace('.','').\
+    replace('"','').replace('!','').replace('(',' ').replace(')','').replace('?','').casefold()
 
 from nltk.tokenize import word_tokenize
 word_20200801 = []
