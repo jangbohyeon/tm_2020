@@ -1,12 +1,33 @@
 # Textmining Project(Team Project)
->SoonChunHyang University, Department of BigData Engineering
->member : Jang Bo Hyeon, Lee Ga Hyun
+>SoonChunHyang University, Department of BigData Engineering  
+>member : Jang Bo Hyeon (bvcxz0525@naver.com), Lee Ga Hyun (rkgus1274@naver.com)
+           
+           
+-------------------
+## 목적
+>요즘은 하룻동안 1,000~10,000건 이상의 기사가 쏟아져나온다. 하지만 하룻동안 나오는 기사들을 우리는 다 읽어볼 수 없다. 
+너무 많은 기사들을 한눈에 보고 빠른 시간동안 정보를 얻을 수 있다면, 얼마나 좋을까라고 생각되어 이 프로젝트를 시작하게 되었다.
+
+
+### 설치방법
+
+본 프로젝트를 클론받는다
+
+
+### 의존성 (dependency)
+- python 3.x
+
+
+### 테스트 실행 방법
+쉘창에서 python3 test.py 를 실행한다. 
+
+\`~$ python3 test.py \`
+
+### 라이선스
+>본 프로젝트에서 사용한 모든 권한은 본 멤버들이 소유하고 있습니다.
+
 
 --------------------
-## Project explanation
->요즘은 하루에 1,000~10,000건의 기사가 쏟아져나오는데 우리는 모든 기사를 다 읽어볼 수 없다. 너무 많은 하루의 기사들을 한눈에 볼 수 있다면 얼마나 좋을까라고 생각되어 이 프로젝트를 시작하게 되었다.
-
-
 ### 분석
 ##### 데이터
 - 빅카인즈(https://www.bigkinds.or.kr/) 사이트에서 데이터를 csv파일로 가져왔다.
