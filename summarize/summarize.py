@@ -2,7 +2,8 @@ import pandas as pd
 import os
 import sys
 
-cfile_20200801 = pd.read_excel('../data_files/Crawling_20200801-20200801.xlsx')
+cfile_20200801 = pd.read_excel('../data_files/\
+Crawling_20200801-20200801.xlsx')
 cfile_20200801 = pd.DataFrame(cfile_20200801)
 
 cnews_20200801 = cfile_20200801
@@ -18,9 +19,11 @@ def cleaning_tx(m_news):
     #이메일 지우기
     m_news = re.sub('([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)', '', m_news)
     #.replace(',','').replace('.','').replace('"','').replace('!','').replace('?','')
-    m_news = m_news.replace('\n',' ').replace('\t',' ').replace('(','').replace(')','').replace('[','').replace(']','').replace('.','. ').casefold()
+    m_news = m_news.replace('\n',' ').\
+    replace('\t',' ').replace('(','').replace(')','').replace('[','').replace(']','').replace('.','. ').casefold()
     #\xa0는 줄바꿈을 의미
-    m_news = re.sub('[-=+#/\:^$@*\"※~&ㆍ』\\‘|\(\)\[\]\<\>`\'…》]', '', m_news)
+    m_news = re.sub('[-=+#/\:^$@*\"※~&ㆍ』\\‘|\(\)\[\]\<\>`\'…》]',\
+     '', m_news)
     complete_cleaning = re.sub('[▷▶◀◁◆■□▲◆●◎○△◇]', '', m_news)
     
     return complete_cleaning
@@ -111,7 +114,8 @@ def choose_word(word, freq=3):
     news_idx = []
     #tf_result : 기사별로 vocabulary의 등장빈도수를 계산한 리스트(리스트 in 리스트 형태)
     for num in range(0, len(tf_result)):
-        if tf_result[num][word_idx] > freq and num not in news_cos_sim:
+        if tf_result[num][word_idx] >\
+         freq and num not in news_cos_sim:
             news_idx.append(num)
     
     summary = ''
