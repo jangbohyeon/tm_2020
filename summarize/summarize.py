@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import pandas as pd
 import os
 import sys
@@ -18,10 +12,6 @@ cnews_20200801 = cnews_20200801.dropna(subset=['내용'])
 # row번호 리셋하기
 cnews_20200801 = cnews_20200801.reset_index()
 
-
-# In[ ]:
-
-
 import re
 
 def cleaning_tx(m_news):
@@ -34,10 +24,6 @@ def cleaning_tx(m_news):
     complete_cleaning = re.sub('[▷▶◀◁◆■□▲◆●◎○△◇]', '', m_news)
     
     return complete_cleaning
-
-
-# In[ ]:
-
 
 from collections import Counter
 from sklearn.feature_extraction.text import CountVectorizer
@@ -54,13 +40,7 @@ def get_vectors(str):
     return vectorizer.transform(text).toarray()
 
 
-# In[ ]:
-
-
 cos_sim = get_cosine_sim(cnews_20200801['내용'])
-
-
-# In[ ]:
 
 
 clean_news = cnews_20200801['내용']
@@ -71,9 +51,6 @@ for num in range(0, len(cos_sim)):
         if num != comp and cos_sim[num][comp] > 0.7:
             #num 행, comp 열
             news_cos_sim += [comp]
-
-
-# In[ ]:
 
 
 from gensim.summarization.summarizer import summarize
@@ -125,17 +102,9 @@ def news_summary(sent_num=0.5):
 """
 
 
-# In[ ]:
-
-
 summarize_20200801 = news_summary()
 summarize_20200801
 
-
-# In[ ]:
-
-
-#기사지운 후
 def choose_word(word, freq=3):
     word_idx = VOCA_20200801.index(word)
     
@@ -156,14 +125,4 @@ def choose_word(word, freq=3):
     return summary_news
 
 
-# In[ ]:
-
-
 after_sum = choose_word('코로나', 5)
-
-
-# In[ ]:
-
-
-
-
