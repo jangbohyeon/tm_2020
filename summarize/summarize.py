@@ -39,10 +39,6 @@ def get_vectors(str):
     vectorizer.fit(text)
     return vectorizer.transform(text).toarray()
 
-
-# In[ ]:
-
-
 cos_sim = get_cosine_sim(cnews_20200801['내용'])
 
 clean_news = cnews_20200801['내용']
