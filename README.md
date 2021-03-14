@@ -1,6 +1,7 @@
 # Textmining Project(Team Project)
 >SoonChunHyang University, Department of BigData Engineering  
 >member : Jang Bo Hyeon (bvcxz0525@naver.com), Lee Ga Hyun (rkgus1274@naver.com)
+>해당 프로젝트는 gitlab에서 프로젝트를 작업했다. <https://gitlab.com/bvcxz0525/tm_2020>
            
            
 -------------------
