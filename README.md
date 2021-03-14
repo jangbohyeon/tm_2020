@@ -2,7 +2,7 @@
 >SoonChunHyang University, Department of BigData Engineering  
 >member : Jang Bo Hyeon (bvcxz0525@naver.com), Lee Ga Hyun (rkgus1274@naver.com)
 >
->해당 프로젝트는 gitlab에서 프로젝트를 작업했다. <https://gitlab.com/bvcxz0525/tm_2020>
+>해당 프로젝트는 gitlab에서 프로젝트를 작업하여, 프로젝트 진행과정은 <https://gitlab.com/bvcxz0525/tm_2020> 해당 링크를 통해 확인해주십시오.
            
            
 -------------------
